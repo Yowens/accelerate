@@ -37,7 +37,7 @@ get_header(); ?>
 			</p>
 
 		<ul class="featured-services">
-		<?php query_posts('posts_per_page=4&post_type=our_services'); ?>
+		<?php query_posts('post_type=our_services'); ?>
 			<?php while ( have_posts() ) : the_post();
 					$image_1 =get_field ('image_1');
 					$size="medium";
@@ -45,11 +45,13 @@ get_header(); ?>
 			<li class="individual-featured-services">
 				<figure class="featured-services-row">
 					<?php echo wp_get_attachment_image($image_1, $size); ?>
-					<?php echo wp_get_attachment_image($image_1, $size); ?>
-					<?php echo wp_get_attachment_image($image_1, $size); ?>
 				</figure>
 
-					<h5><a href="<?php the_permalink(); ?>"><?php the_title ();  ?></a></h5>
+			<div class="services-content">
+				<h5><?php the_title ();  ?></h5>
+				<p><?php the_content (); ?></p>
+			</div>
+
 			</li>
 			<?php endwhile; ?>
 			<?php wp_reset_query(); ?>
@@ -57,6 +59,8 @@ get_header(); ?>
 
 	</div>
 
-<?php get_footer(); ?>
+
 
 </section>
+
+<?php get_footer(); ?>

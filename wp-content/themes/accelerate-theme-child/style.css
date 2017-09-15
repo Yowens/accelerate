@@ -121,3 +121,9 @@ li.individual-featured-work h5{
   width:300px;
   margin-left: 460px;
 }
+
+/* About Page Styles */
+
+ul.featured-services{
+  list-style-type: none;
+}
