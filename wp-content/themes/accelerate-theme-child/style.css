@@ -124,6 +124,11 @@ li.individual-featured-work h5{
 
 /* About Page Styles */
 
+#homepage-info h3{
+  line-height: 1.5em;
+  
+}
+
 ul.featured-services{
   list-style-type: none;
 }
