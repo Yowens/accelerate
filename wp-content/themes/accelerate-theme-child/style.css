@@ -126,9 +126,19 @@ li.individual-featured-work h5{
 
 #homepage-info h3{
   line-height: 1.5em;
-  
+
 }
 
 ul.featured-services{
   list-style-type: none;
+}
+
+.services-content:nth-child(even){
+  width: 650px;
+
+}
+
+.featured-services-row:nth-child(odd){
+  width: 220px;
+
 }
