@@ -138,7 +138,13 @@ ul.featured-services{
 
 }
 
-.featured-services-row:nth-child(odd){
-  width: 220px;
+.services-content:nth-child(odd){
 
+}
+
+/*.featured-services-row:nth-child(odd){
+  width: 220px; */
+
+.featured-services li:nth-child(even) figure{
+  float:right;
 }
