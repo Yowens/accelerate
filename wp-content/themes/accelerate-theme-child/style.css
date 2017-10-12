@@ -133,18 +133,22 @@ ul.featured-services{
   list-style-type: none;
 }
 
-.services-content:nth-child(even){
-  width: 650px;
+.services-content{
+  /*width: 650px;*/
+  padding-right:200px;
 
 }
-
-.services-content:nth-child(odd){
-
-}
-
-/*.featured-services-row:nth-child(odd){
-  width: 220px; */
 
 .featured-services li:nth-child(even) figure{
   float:right;
+
+
+}
+
+.featured-services li figure{
+  float:left;
+}
+
+.individual-featured-services {
+  clear: both;
 }
